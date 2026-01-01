@@ -1,0 +1,142 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>Shellix OS – Concept</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <style>
+    :root{
+      --bg: #0b1020;
+      --card: #141a2b;
+      --text: #e8eaf6;
+      --muted: #aab4d4;
+      --accent: #6aa9ff;
+      --border: #243049;
+    }
+    *{box-sizing:border-box}
+    html,body{margin:0;height:100%}
+    body{
+      font-family: system-ui, -apple-system, "Segoe UI", Roboto, Arial;
+      background: radial-gradient( circle at 20% -10%, rgba(106,169,255,.15) 0%, transparent 40% ),
+                  radial-gradient( circle at 90% 10%, rgba(255,215,0,.10) 0%, transparent 40% ),
+                  var(--bg);
+      color: var(--text);
+      line-height:1.5;
+    }
+    header{
+      padding: 20px;
+      text-align:left;
+      border-bottom: 1px solid var(--border);
+      background: rgba(20,26,43,.75);
+      position: sticky; top:0; z-index: 10;
+    }
+    header h1{font-size: 1.6rem; margin:0 0 6px}
+    header p{color:var(--muted); margin:0}
+    .container{max-width:1000px; margin:28px auto; padding:0 16px}
+    .hero{
+      display:flex; align-items:center; gap:20px;
+      padding:16px; border:1px solid var(--border); border-radius:12px;
+      background: linear-gradient(135deg, rgba(20,26,43,.9), rgba(20,26,43,.6));
+      overflow:hidden;
+    }
+    .hero img{
+      width:320px; height:180px; object-fit:cover; border-radius:8px;
+      border:1px solid var(--border);
+      background:#111;
+    }
+    .hero-text{flex:1}
+    .badge{
+      display:inline-block; padding:4px 10px; border-radius:999px;
+      background: rgba(106,169,255,.2); color:#d7e6ff; font-size:.8rem;
+      border:1px solid rgba(106,169,255,.4)
+    }
+    section{margin-top:28px}
+    h2{font-size:1.1rem; margin:0 0 8px}
+    p{margin:.5em 0}
+    code{
+      font-family: ui-monospace,SFMono-Regular,Monaco,Consolas,"Liberation Mono";
+      background:#1e2541; padding:2px 6px; border-radius:4px; color:#e8f0ff
+    }
+    .grid{display:grid; grid-template-columns:1fr 1fr; gap:16px}
+    .card{padding:16px; border:1px solid var(--border); border-radius:12px; background:#111522}
+    ul{margin:0; padding-left:20px}
+    li{margin:.4em 0}
+    footer{
+      margin-top:40px; padding:20px 0; text-align:center;
+      color:var(--muted); font-size:.9rem
+    }
+    @media (max-width: 800px){
+      .hero{flex-direction:column; align-items:flex-start}
+      .hero img{width:100%; height:auto}
+      .grid{grid-template-columns:1fr}
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Shellix OS</h1>
+    <p>Explain your OS concept here with editable placeholders in {}.</p>
+  </header>
+
+  <main class="container">
+    <section class="hero" aria-label="Shellix OS hero">
+      <img src="{picture of shellix desktop using the kde desktop plasma}" alt="Shellix desktop on KDE Plasma">
+      <div class="hero-text">
+        <span class="badge">Preview</span>
+        <h2>Shellix OS Overview</h2>
+        <p>Shellix OS is used much like Ubuntu, with similar workflows and tools but some different configuration choices.</p>
+        <p>Replace the text and image placeholders in {} with real content as the project evolves.</p>
+      </div>
+    </section>
+
+    <section class="grid" aria-label="Shellix OS sections">
+      <article class="card" aria-label="How to use">
+        <h2>How to use</h2>
+        <p>Use this the same as Ubuntu; it is nearly the same except for some configs.</p>
+        <ul>
+          <li>Base experience: {ubuntu-like environment}</li>
+          <li>Desktop: {kde plasma setup}</li>
+          <li>Config differences: {list config changes}</li>
+        </ul>
+      </article>
+
+      <article class="card" aria-label="Get help">
+        <h2>Get help</h2>
+        <p>If something does not work right because it is different from Ubuntu, create an issue here:</p>
+        <ul>
+          <li>Issue tracker: {link to issue tracker}</li>
+          <li>Documentation: {link to docs}</li>
+          <li>Community chat: {link to chat/discord}</li>
+        </ul>
+      </article>
+    </section>
+
+    <section class="grid" aria-label="Platform support">
+      <article class="card" aria-label="Architecture">
+        <h2>Will you make it for x86?</h2>
+        <p>Yes, probably in the future, but for now just arm64/Pi.</p>
+        <ul>
+          <li>Current target: {arm64 / Raspberry Pi}</li>
+          <li>Planned: {x86 build status}</li>
+          <li>Build instructions: {link to build guide}</li>
+        </ul>
+      </article>
+
+      <article class="card" aria-label="Extra placeholders">
+        <h2>More details</h2>
+        <p>Use these placeholders to expand the page as Shellix OS grows:</p>
+        <ul>
+          <li>{feature list}</li>
+          <li>{installation steps}</li>
+          <li>{screenshots gallery}</li>
+          <li>{changelog or roadmap}</li>
+        </ul>
+      </article>
+    </section>
+  </main>
+
+  <footer>
+    <p>Shellix OS concept page • customize everything inside {curly braces}</p>
+  </footer>
+</body>
+</html>
